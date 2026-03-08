@@ -54,6 +54,12 @@ MultiVis-Bench provides benchmark files:
 - **`database/`** and **`img/`** subdirectories with databases and images used in benchmark tasks.
 - For the databases in `MultiVis-Bench/database/`, download the Spider dataset from [Google Drive](https://drive.google.com/file/d/1403EGqzIDoHMdQF4c9Bkyl7dZLZ5Wt6J/view) and extract **all database files** into the `MultiVis-Bench/database/` directory.
 
+## License
+
+- Source code in this repository is released under the **MIT License**. This includes the framework under `MultiVis-Agent/`, metric scripts, top-level runnable scripts, and Python reference implementations under `MultiVis-Bench/code/` and `MultiVis-Bench/vis_modify/`. See [LICENSE](LICENSE).
+- Benchmark data and annotations distributed with this repository are released under **CC BY 4.0**. This includes the JSON benchmark files under `MultiVis-Bench/` and other benchmark assets distributed with the repository unless otherwise noted. See [LICENSE-DATA](LICENSE-DATA).
+- Third-party resources that must be downloaded separately, including the Spider databases placed under `MultiVis-Bench/database/`, are **not** covered by the licenses above and remain subject to their original licenses and terms.
+
 ## Citation
 
 If you find this project useful in your research, please cite:
