@@ -10,7 +10,7 @@ MultiVis-Agent is a multi-agent framework with explicit logic rules for **reliab
 ## Repository Overview
 
 - **`MultiVis-Agent/`**: Core multi-agent system (coordinator, tool manager, config, database/query and validation agents).
-- **`MultiVis-Agent_demo/`**: Front-end of multi-agent system
+- **`MultiVis-Agent_demo/`**: Front-end of multi-agent system.
 - **`MultiVis-Bench/`**: Benchmark datasets and reference implementations for text-to-vis and vis-modify tasks.
 - **`metric/`**: Visualization evaluation metrics used in the paper.
 - **`run_system.py`**: Example entry script to run the multi-agent visualization system on a sample.
@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 - **Configure LLM APIs**
 
-Edit `MultiVis-Agent/utils/Config.py`,`MultiVis-Agent_demo/vis_system/utils/Config.py` and replace the placeholder `"xxx"` values in `MODEL_CONFIGS` with your own API keys and endpoints.
+Edit `MultiVis-Agent/utils/Config.py`, `MultiVis-Agent_demo/vis_system/utils/Config.py` and replace the placeholder `"xxx"` values in `MODEL_CONFIGS` with your own API keys and endpoints.
 
 ## Quick Start
 
