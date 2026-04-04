@@ -2,11 +2,15 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2601.18320-b31b1b.svg)](https://arxiv.org/abs/2601.18320)
 
-MultiVis-Agent is a multi-agent framework with explicit logic rules for **reliable, comprehensive cross-modal data visualization**, supporting inputs such as natural language, code, and images. This repository also provides **MultiVis-Bench**, a benchmark for text-to-vis and visualization modification tasks, and an automatic **metric suite** for visualization quality.
+MultiVis-Agent is a multi-agent framework with explicit logic rules for **reliable, comprehensive cross-modal data visualization**, supporting inputs such as natural language, code, and images. This repository also provides a **web-based demonstration** and video presentation of MultiVis-Agent, **MultiVis-Bench**, a benchmark for text-to-vis and visualization modification tasks, and an automatic **metric suite** for visualization quality.
+
+## Demonstration
+<video src="https://github.com/user-attachments/assets/17d771c1-5bb8-4617-9e0b-b447b1d7ae1c" controls="controls" width="100%"></video>
 
 ## Repository Overview
 
 - **`MultiVis-Agent/`**: Core multi-agent system (coordinator, tool manager, config, database/query and validation agents).
+- **`MultiVis-Agent_demo/`**: Front-end of multi-agent system.
 - **`MultiVis-Bench/`**: Benchmark datasets and reference implementations for text-to-vis and vis-modify tasks.
 - **`metric/`**: Visualization evaluation metrics used in the paper.
 - **`run_system.py`**: Example entry script to run the multi-agent visualization system on a sample.
@@ -24,7 +28,7 @@ pip install -r requirements.txt
 
 - **Configure LLM APIs**
 
-Edit `MultiVis-Agent/utils/Config.py` and replace the placeholder `"xxx"` values in `MODEL_CONFIGS` with your own API keys and endpoints.
+Edit `MultiVis-Agent/utils/Config.py`, `MultiVis-Agent_demo/vis_system/utils/Config.py` and replace the placeholder `"xxx"` values in `MODEL_CONFIGS` with your own API keys and endpoints.
 
 ## Quick Start
 
@@ -35,6 +39,15 @@ python run_system.py
 ```
 
 The script creates log and temporary folders and runs a sample item through the `CoordinatorAgent`, logging intermediate steps and final visualization code.
+
+- **Run Front-end of multi-agent system**
+
+```bash
+cd MultiVis-Agent_demo
+python app.py
+```
+
+The script starts the frontend on a local port and users can interact with multi-agent system on the web page.
 
 - **Evaluate generated results**
 
@@ -76,5 +89,12 @@ If you find this project useful in your research, please cite:
   month     = {feb},
   publisher = {ACM},
   doi       = {10.1145/3786670}
+}
+
+@inproceedings{lu2026demonstration,
+  title={Demonstration of MultiVis-Agent: Interactively Generating Reliable Visualizations via Logic-Rule Agents},
+  author={Lu, Jinwei and Lu, Jiawei and Zhang, Chen and Song, Yuanfeng and Wong, Raymond Chi-Wing},
+  booktitle={Companion of the 2026 International Conference on Management of Data},
+  year={2026}
 }
 ```
