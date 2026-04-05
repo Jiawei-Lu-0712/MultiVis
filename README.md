@@ -5,7 +5,7 @@
 MultiVis-Agent is a multi-agent framework with explicit logic rules for **reliable, comprehensive cross-modal data visualization**, supporting inputs such as natural language, code, and images. This repository also provides a **web-based demonstration** and video presentation of MultiVis-Agent, **MultiVis-Bench**, a benchmark for text-to-vis and visualization modification tasks, and an automatic **metric suite** for visualization quality.
 
 ## Demonstration
-https://github.com/user-attachments/assets/fde62641-c9b4-4325-9c60-325504e2db1b
+https://github.com/user-attachments/assets/9f27ceab-fde1-417a-bf1a-fc88bf8c8881
 
 ## Repository Overview
 
